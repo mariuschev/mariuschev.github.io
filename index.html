@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cybersécurité</title>
+    <title>Marius CHEVAILLER - Portfolio Cybersécurité</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -17,98 +17,47 @@
     <nav class="nav-container">
         <div class="logo">SEC_PORTFOLIO</div>
         <ul class="nav-links">
-            <li><a href="#about">À Propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#education">Formation</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="active">À Propos</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="formation.html">Formation</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="cyber-grid">
-            <h1>Cybersécurité & Infrastructure</h1>
-            <p class="subtitle">Étudiant en Sécurité des Systèmes</p>
-            <div class="social-links">
-                <a href="https://github.com/votre-username" target="_blank" class="github-link">GitHub</a>
-                <a href="https://linkedin.com/in/votre-profil" target="_blank" class="linkedin-link">LinkedIn</a>
-                <a href="mailto:votre@email.com" class="email-link">Email</a>
+    <!-- Main Content -->
+    <main class="about-container">
+        <div class="profile-section">
+            <div class="profile-wrapper">
+                <div class="profile-image-container">
+                    <img src="assets/images/profil.png" alt="Marius CHEVAILLER" class="profile-image">
+                    <div class="profile-overlay"></div>
+                    <div class="profile-glitch"></div>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="Marius CHEVAILLER">Marius CHEVAILLER</h1>
+                </div>
+                <div class="typed-wrapper">
+                    <span class="typed-text">Étudiant en Cybersécurité</span>
+                    <span class="cursor"></span>
+                </div>
+                <div class="about-text">
+                    <p>Passionné par la cybersécurité et le hacking éthique, je me spécialise dans la protection des systèmes d'information et la sécurité offensive. Mon objectif est de contribuer à la création d'un cyberespace plus sûr à travers l'innovation et l'expertise technique.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/votre-username" target="_blank" class="github-link">
+                        <span class="icon">&#xf09b;</span>
+                        <span class="link-text">GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/votre-profil" target="_blank" class="linkedin-link">
+                        <span class="icon">&#xf08c;</span>
+                        <span class="link-text">LinkedIn</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>À Propos</h2>
-        <div class="content-grid">
-            <div class="about-text">
-                <p>Passionné par la cybersécurité et les infrastructures systèmes, je me spécialise dans la protection des systèmes d'information et le développement sécurisé.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2>Compétences Techniques</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Langages</h3>
-                <ul class="skill-list">
-                    <li>Python</li>
-                    <li>Bash</li>
-                    <li>PowerShell</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Sécurité</h3>
-                <ul class="skill-list">
-                    <li>Analyse de Vulnérabilités</li>
-                    <li>Pentesting</li>
-                    <li>Forensics</li>
-                    <li>SIEM</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Infrastructure</h3>
-                <ul class="skill-list">
-                    <li>Linux</li>
-                    <li>Windows Server</li>
-                    <li>Active Directory</li>
-                    <li>Virtualisation</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projets</h2>
-        <div class="projects-grid">
-            <!-- Project cards will be added here -->
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <h2>Formation</h2>
-        <div class="timeline">
-            <!-- Timeline items will be styled with CSS -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-            <div class="contact-info">
-                <a href="https://github.com/votre-username" class="contact-link github">GitHub</a>
-                <a href="https://linkedin.com/in/votre-profil" class="contact-link linkedin">LinkedIn</a>
-                <a href="mailto:votre@email.com" class="contact-link email">Email</a>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
