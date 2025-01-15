@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio Cybersécurité</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="nav-container">
+        <div class="logo">SEC_PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">À Propos</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="formation.html">Formation</a></li>
+        </ul>
+    </nav>
+
+    <main class="projects-container">
+        <h1 class="section-title glitch" data-text="Projets">Projets</h1>
+
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <div class="project-card cyberpunk-card">
+                <div class="project-header">
+                    <div class="project-type">Sécurité Offensive</div>
+                    <h3>Network Vulnerability Scanner</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Scanner de vulnérabilités réseau automatisé développé en Python. 
+                        Détection des services exposés et analyse des failles potentielles.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Nmap</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Scan multi-threads des ports et services</li>
+                            <li>Base de données de vulnérabilités intégrée</li>
+                            <li>Génération de rapports détaillés</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="github-button">
+                        <span class="icon">&#xf09b;</span>
+                        <span>Code Source</span>
+                    </a>
+                    <a href="#" class="demo-button">
+                        <span class="icon">&#xf108;</span>
+                        <span>Démo</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card cyberpunk-card">
+                <div class="project-header">
+                    <div class="project-type">Analyse Forensique</div>
+                    <h3>Memory Forensics Tool</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Outil d'analyse mémoire pour l'investigation numérique.
+                        Extraction et analyse des processus, connexions réseau et artefacts mémoire.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Volatility</span>
+                        <span>YARA</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Analyse des processus malveillants</li>
+                            <li>Détection des rootkits en mémoire</li>
+                            <li>Timeline des événements système</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="github-button">
+                        <span class="icon">&#xf09b;</span>
+                        <span>Code Source</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project-card cyberpunk-card">
+                <div class="project-header">
+                    <div class="project-type">Sécurité Défensive</div>
+                    <h3>SIEM Dashboard</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Interface de visualisation des événements de sécurité en temps réel.
+                        Agrégation et corrélation des logs système et réseau.
+                    </p>
+                    <div class="project-tech">
+                        <span>ELK Stack</span>
+                        <span>Python</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Visualisation temps réel des alertes</li>
+                            <li>Règles de détection personnalisables</li>
+                            <li>Reporting automatisé</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="github-button">
+                        <span class="icon">&#xf09b;</span>
+                        <span>Code Source</span>
+                    </a>
+                    <a href="#" class="demo-button">
+                        <span class="icon">&#xf108;</span>
+                        <span>Démo Live</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
