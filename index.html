@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cybersécurité</title>
+    <title>Marius CHEVAILLER - Portfolio Cybersécurité</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Particle background -->
     <div id="particles-js"></div>
 
-    <!-- Navigation -->
     <nav class="nav-container">
         <div class="logo">SEC_PORTFOLIO</div>
         <ul class="nav-links">
@@ -24,28 +24,164 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="cyber-grid">
-            <h1>Cybersécurité & Infrastructure</h1>
-            <p class="subtitle">Étudiant en Sécurité des Systèmes</p>
-            <div class="social-links">
-                <a href="https://github.com/mariuschev" target="_blank" class="github-link">GitHub</a>
-                <a href="https://linkedin.com/in/marius-chevailler" target="_blank" class="linkedin-link">LinkedIn</a>
-                <a href="mailto:votre@email.com" class="email-link">Email</a>
+    <main class="hero-container">
+        <div class="profile-section">
+            <div class="profile-container">
+                <div class="profile-wrapper">
+                    <div class="blob-shape">
+                        <div class="profile-image-container">
+                            <img src="assets/images/profil.png" alt="Marius CHEVAILLER" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="profile-background">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="intro-content cyber-grid">
+                <div class="content-wrapper">
+                    <div class="main-title">
+                        <h1 class="glitch-text" data-text="Marius CHEVAILLER">Marius CHEVAILLER</h1>
+                        <h2>Cybersécurité, Infrastructure & Logiciel</h2>
+                        <p class="subtitle">Étudiant en Sécurité des Systèmes</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/mariuschev" class="cyber-button">
+                            <span class="button-text">GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/marius-chevailler" class="cyber-button">
+                            <span class="button-text">LinkedIn</span>
+                        </a>
+                        <a href="mailto:marius.chevailler@efrei.net" class="cyber-button">
+                            <span class="button-text">Email</span>
+                        </a>
+                    </div>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>À Propos</h2>
-        <div class="content-grid">
-            <div class="about-text">
-                <p>Passionné par la cybersécurité et les infrastructures systèmes, je me spécialise dans la protection des systèmes d'information et le développement sécurisé.</p>
+                    <div class="cv-download">
+                        <a href="assets/docs/CV_CHEVAILLER Marius.pdf" class="download-button" download>
+                            <span class="button-content">
+                                <svg class="download-icon" viewBox="0 0 24 24" width="18" height="18">
+                                    <path d="M12 15L8 11H11V3H13V11H16L12 15Z M21 14V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V14" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Télécharger mon CV</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Section Profil -->
+        <div class="main-profile-section">
+            <div class="profile-card">
+                <div class="card-title">
+                    <i class="fas fa-user-shield"></i>
+                    <h2>Profil Professionnel</h2>
+                </div>
+                <div class="card-content">
+                    <p>Passionné par la cybersécurité depuis mon plus jeune âge, je me spécialise dans la sécurité offensive et la protection des infrastructures. Mon parcours en sécurité des systèmes m'a permis de développer une expertise pointue dans l'analyse des vulnérabilités et la mise en place de solutions de sécurisation robustes.</p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="card-title">
+                    <i class="fas fa-briefcase"></i>
+                    <h2>Expériences Professionnelles</h2>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <span class="time-dot"></span>
+                            <span class="company">Vinci Energies – Citeos, NANTERRE</span>
+                            <span class="date">Novembre 2023 - Avril 2025</span>
+                        </div>
+                        
+                        <h3>Ingénieur Cyber DevOps et R&D</h3>
+                        
+                        <div class="task-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="task-content">
+                                <span>Monitoring des infrastructures et mise en place d'un alerting cyber centralisé</span>
+                                <div class="tech-badges">
+                                    <span class="badge">Wazuh</span>
+                                    <span class="badge">Ansible</span>
+                                    <span class="badge">ELK</span>
+                                    <span class="badge">Grafana</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="task-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="task-content">
+                                <span>R&D Cyber sur un projet de simulation d'attaque sur les bornes de recharges de véhicule électriques</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <span class="time-dot"></span>
+                            <span class="company">COVEA, NIORT</span>
+                            <span class="date">Juin 2019</span>
+                        </div>
+                        
+                        <h3>Stage Académique - Direction des Technologies et des SI</h3>
+                        
+                        <div class="task-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="task-content">
+                                <span>Suivi du processus de déploiement d'une solution informatique au sein du parc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="beyond-tech-section">
+                <h2 class="section-title">
+                    <i class="fas fa-plus-circle"></i>
+                    Au-delà du Technique
+                </h2>
+                
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="card-title">
+                            <i class="fas fa-tennis-ball"></i>
+                            <h3>Passion pour le Sport</h3>
+                        </div>
+                        <div class="card-content">
+                            <span class="year-badge">10 ans de Tennis</span>
+                            <p>Joueur de tennis passionné, j'ai développé une véritable passion pour les sports de raquette. 
+                            Cette pratique m'a inculqué des valeurs essentielles de persévérance et de dépassement de soi.</p>
+                        </div>
+                    </div>
+
+                    <div class="interest-card">
+                        <div class="card-title">
+                            <i class="fas fa-users"></i>
+                            <h3>Leadership Associatif</h3>
+                        </div>
+                        <div class="card-content">
+                            <span class="role-badge">Vice-Président BDS</span>
+                            <p>En tant que Vice-Président du Bureau des Sports de mon école, je gère une association de 400 membres. 
+                            Cette expérience m'a permis de développer des compétences cruciales en:</p>
+                            <div class="skill-badges">
+                                <span class="badge">Management</span>
+                                <span class="badge">Communication</span>
+                                <span class="badge">Organisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>

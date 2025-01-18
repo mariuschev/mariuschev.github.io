@@ -104,3 +104,20 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+// Ajoutez ce code à votre fichier main.js
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.about-group').forEach(group => {
+    observer.observe(group);
+});
