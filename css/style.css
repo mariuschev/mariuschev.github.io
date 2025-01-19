@@ -1287,5 +1287,136 @@ h2 {
 .profile-card, .experience-card, .interest-card {
     animation: fadeInUp 0.5s ease-out forwards;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-grid {
+        padding: 1rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .main-profile-section {
+        padding: 1rem;
+    }
 
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        margin-left: 0;
+    }
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .personal-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-item {
+        padding: 1rem;
+    }
+    .download-button {
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-content {
+        width: calc(100% - 2rem);
+        margin-left: 2rem !important;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-container {
+        padding: 6rem 2rem 2rem;
+    }
+
+    .glitch-text {
+        font-size: 2.5rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-container {
+        padding: 6rem 1rem 2rem;
+    }
+
+    .profile-image-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cyber-grid {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .nav-links {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .glitch-text {
+        font-size: 2.5rem;
+    }
+    .intro-content {
+        margin-top: 2rem;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .interests-grid {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+}
 
