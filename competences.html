@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
@@ -23,98 +25,156 @@
     </nav>
 
     <main class="skills-container">
-        <h1 class="section-title glitch" data-text="Compétences">Compétences</h1>
-        
-        <div class="skills-grid">
-            <div class="skill-category cyberpunk-card">
-                <h3>Sécurité Offensive</h3>
-                <div class="skill-progress-container">
-                    <div class="skill-item">
-                        <span>Pentesting</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%"></div>
-                        </div>
+        <!-- Hard Skills Section -->
+        <section class="hard-skills-section">
+            <div class="section-header cyber-grid">
+                <h1 class="glitch-text" data-text="Hard Skills">Hard Skills</h1>
+                <p class="section-subtitle">Compétences Techniques</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Sécurité Offensive -->
+                <div class="skill-category cyberpunk-card">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Sécurité Offensive</h3>
                     </div>
-                    <div class="skill-item">
-                        <span>Analyse de Vulnérabilités</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Pentesting</span>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Metasploit</span>
+                                <span class="tech-badge">Burp Suite</span>
+                                <span class="tech-badge">Nmap</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Reverse Engineering</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%"></div>
+                        <div class="skill-item">
+                            <span>Analyse de Vulnérabilités</span>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Nessus</span>
+                                <span class="tech-badge">OpenVAS</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Infrastructure -->
+                <div class="skill-category cyberpunk-card">
+                    <div class="card-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Infrastructure</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Systèmes</span>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Linux</span>
+                                <span class="tech-badge">Windows Server</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Cloud & Virtualisation</span>
+                            <div class="tech-stack">
+                                <span class="tech-badge">AWS</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">VMware</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Développement -->
+                <div class="skill-category cyberpunk-card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Développement</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Langages</span>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Bash</span>
+                                <span class="tech-badge">PowerShell</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Monitoring</span>
+                            <div class="tech-stack">
+                                <span class="tech-badge">ELK Stack</span>
+                                <span class="tech-badge">Grafana</span>
+                                <span class="tech-badge">Wazuh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills Section -->
+        <section class="soft-skills-section">
+            <div class="section-header cyber-grid">
+                <h1 class="glitch-text" data-text="Soft Skills">Soft Skills</h1>
+                <p class="section-subtitle">Compétences Humaines et Organisationnelles</p>
             </div>
 
-            <div class="skill-category cyberpunk-card">
-                <h3>Langages & Scripts</h3>
-                <div class="skill-progress-container">
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 88%"></div>
-                        </div>
+            <div class="skills-grid">
+                <!-- Management -->
+                <div class="skill-category cyberpunk-card">
+                    <div class="card-header">
+                        <i class="fas fa-users-gear"></i>
+                        <h3>Leadership & Management</h3>
                     </div>
-                    <div class="skill-item">
-                        <span>Bash</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 82%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>PowerShell</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 78%"></div>
+                    <div class="soft-skill-content">
+                        <ul class="soft-skill-list">
+                            <li><i class="fas fa-check"></i>Gestion d'équipe</li>
+                            <li><i class="fas fa-check"></i>Organisation d'évènements</li>
+                            <li><i class="fas fa-check"></i>Prise de décision</li>
+                            <li><i class="fas fa-check"></i>Délégation</li>
+                        </ul>
+                        <div class="skill-context">
+                            <span class="context-badge">Vice-Président BDS</span>
+                            <p>Expérience de gestion d'une association de 400 membres</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skill-category cyberpunk-card">
-                <h3>Infrastructure & Réseau</h3>
-                <div class="skill-progress-container">
-                    <div class="skill-item">
-                        <span>Administration Linux</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 92%"></div>
-                        </div>
+                <!-- Communication -->
+                <div class="skill-category cyberpunk-card">
+                    <div class="card-header">
+                        <i class="fas fa-comments"></i>
+                        <h3>Communication</h3>
                     </div>
-                    <div class="skill-item">
-                        <span>Active Directory</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Virtualisation</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 88%"></div>
-                        </div>
+                    <div class="soft-skill-content">
+                        <ul class="soft-skill-list">
+                            <li><i class="fas fa-check"></i>Communication technique</li>
+                            <li><i class="fas fa-check"></i>Présentation orale</li>
+                            <li><i class="fas fa-check"></i>Rédaction de rapports</li>
+                            <li><i class="fas fa-check"></i>Travail en équipe</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="certifications-section">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <!-- Ajoutez vos certifications ici -->
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-certificate"></i>
+                <!-- Qualités Personnelles -->
+                <div class="skill-category cyberpunk-card">
+                    <div class="card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Qualités Personnelles</h3>
                     </div>
-                    <div class="certification-details">
-                        <h4>CompTIA Security+</h4>
-                        <p>Date d'obtention: 2023</p>
+                    <div class="soft-skill-content">
+                        <ul class="soft-skill-list">
+                            <li><i class="fas fa-check"></i>Autonomie</li>
+                            <li><i class="fas fa-check"></i>Adaptabilité</li>
+                            <li><i class="fas fa-check"></i>Rigueur</li>
+                            <li><i class="fas fa-check"></i>Curiosité Technique</li>
+                        </ul>
+                        <div class="skill-context">
+                            <p>Développées à travers mes expériences professionnelles et sportives</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Répétez pour d'autres certifications -->
             </div>
-        </div>
+        </section>
     </main>
 
     <script src="js/main.js"></script>
