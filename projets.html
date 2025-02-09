@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <div id="particles-js"></div>
 
     <nav class="nav-container">
-        <div class="logo">SEC_PORTFOLIO</div>
+        <div class="logo">MON_PORTFOLIO</div>
         <ul class="nav-links">
             <li><a href="index.html">À Propos</a></li>
             <li><a href="competences.html">Compétences</a></li>
@@ -23,110 +25,93 @@
     </nav>
 
     <main class="projects-container">
-        <h1 class="section-title glitch" data-text="Projets">Projets</h1>
+        <div class="section-header cyber-grid">
+            <h1 class="glitch-text" data-text="Projets">Projets</h1>
+            <p class="section-subtitle">Une sélection de mes projets significatifs</p>
+        </div>
 
         <div class="projects-grid">
-            <!-- Projet 1 -->
+            <!-- Projet SafeHub -->
             <div class="project-card cyberpunk-card">
                 <div class="project-header">
-                    <div class="project-type">Sécurité Offensive</div>
-                    <h3>Network Vulnerability Scanner</h3>
+                    <div class="project-type">Application Sécurisée</div>
+                    <h3>SafeHub - Chat Room Sécurisée</h3>
+                    <span class="project-date">Juin 2024 - Juillet 2024</span>
                 </div>
                 <div class="project-content">
-                    <p class="project-description">
-                        Scanner de vulnérabilités réseau automatisé développé en Python. 
-                        Détection des services exposés et analyse des failles potentielles.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Nmap</span>
-                        <span>SQLite</span>
+                    <div class="project-association">
+                        <i class="fas fa-university"></i>
+                        <span>EFREI Paris - MasterCamp L3</span>
                     </div>
+                    <p class="project-description">
+                        Création d'une data room virtuelle permettant aux utilisateurs de partager des documents et de communiquer en toute sécurité via un salon de discussion.
+                    </p>
                     <div class="project-features">
                         <ul>
-                            <li>Scan multi-threads des ports et services</li>
-                            <li>Base de données de vulnérabilités intégrée</li>
-                            <li>Génération de rapports détaillés</li>
+                            <li>Communication sécurisée via Sockets en Python</li>
+                            <li>Chiffrement de bout en bout (LDAP, SSL/TLS)</li>
+                            <li>Authentification multi-facteurs</li>
+                            <li>Journalisation des activités pour l'audit</li>
                         </ul>
                     </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="github-button">
-                        <span class="icon">&#xf09b;</span>
-                        <span>Code Source</span>
-                    </a>
-                    <a href="#" class="demo-button">
-                        <span class="icon">&#xf108;</span>
-                        <span>Démo</span>
-                    </a>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>SSL/TLS</span>
+                        <span>LDAP</span>
+                        <span>Sockets</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="assets/docs/Démonstration.mp4" class="project-button" target="_blank">
+                            <i class="fas fa-play"></i>
+                            <span>Voir la démo</span>
+                        </a>
+                        <a href="https://github.com/Otto-Sander/Chatroom-Securisee" class="project-button">
+                            <i class="fab fa-github"></i>
+                            <span>Code source</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Projet 2 -->
+            <!-- Projet SoWeSkip -->
             <div class="project-card cyberpunk-card">
                 <div class="project-header">
-                    <div class="project-type">Analyse Forensique</div>
-                    <h3>Memory Forensics Tool</h3>
+                    <div class="project-type">Application Mobile</div>
+                    <h3>SoWeSkip - Files d'Attente Virtuelles</h3>
+                    <div class="project-achievement">🏆 3ème prix TechDay 2024</div>
+                    <span class="project-date">Janvier 2024 - Juin 2024</span>
                 </div>
                 <div class="project-content">
-                    <p class="project-description">
-                        Outil d'analyse mémoire pour l'investigation numérique.
-                        Extraction et analyse des processus, connexions réseau et artefacts mémoire.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Volatility</span>
-                        <span>YARA</span>
+                    <div class="project-association">
+                        <i class="fas fa-university"></i>
+                        <span>EFREI Paris - Projet Transverse L3</span>
                     </div>
+                    <p class="project-description">
+                        Application innovante de gestion de files d'attente virtuelles visant à simplifier l'expérience utilisateur dans divers contextes.
+                    </p>
                     <div class="project-features">
                         <ul>
-                            <li>Analyse des processus malveillants</li>
-                            <li>Détection des rootkits en mémoire</li>
-                            <li>Timeline des événements système</li>
+                            <li>Création et gestion de files d'attente virtuelles</li>
+                            <li>Système de QR codes pour rejoindre les files</li>
+                            <li>Interface d'administration pour la gestion des files</li>
+                            <li>Système de compte utilisateur sécurisé</li>
                         </ul>
                     </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="github-button">
-                        <span class="icon">&#xf09b;</span>
-                        <span>Code Source</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Projet 3 -->
-            <div class="project-card cyberpunk-card">
-                <div class="project-header">
-                    <div class="project-type">Sécurité Défensive</div>
-                    <h3>SIEM Dashboard</h3>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        Interface de visualisation des événements de sécurité en temps réel.
-                        Agrégation et corrélation des logs système et réseau.
-                    </p>
                     <div class="project-tech">
-                        <span>ELK Stack</span>
-                        <span>Python</span>
-                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Tailwind</span>
+                        <span>QR Code</span>
                     </div>
-                    <div class="project-features">
-                        <ul>
-                            <li>Visualisation temps réel des alertes</li>
-                            <li>Règles de détection personnalisables</li>
-                            <li>Reporting automatisé</li>
-                        </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-button demo" target="_blank">
+                            <i class="fas fa-play"></i>
+                            <span>Voir la démo</span>
+                        </a>
+                        <a href="#" class="project-button code" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Code source</span>
+                        </a>
                     </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="github-button">
-                        <span class="icon">&#xf09b;</span>
-                        <span>Code Source</span>
-                    </a>
-                    <a href="#" class="demo-button">
-                        <span class="icon">&#xf108;</span>
-                        <span>Démo Live</span>
-                    </a>
                 </div>
             </div>
         </div>

@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <div id="particles-js"></div>
 
     <nav class="nav-container">
-        <div class="logo">SEC_PORTFOLIO</div>
+        <div class="logo">MON_PORTFOLIO</div>
         <ul class="nav-links">
             <li><a href="index.html">À Propos</a></li>
             <li><a href="competences.html">Compétences</a></li>
@@ -22,23 +24,39 @@
         </ul>
     </nav>
 
-    <main class="education-container">
-        <h1 class="section-title glitch" data-text="Formation">Formation</h1>
+    <main class="formation-container">
+        <div class="section-header cyber-grid">
+            <h1 class="glitch-text" data-text="Formation">Formation</h1>
+            <p class="section-subtitle">Mon parcours académique et mes certifications</p>
+        </div>
 
         <div class="timeline-container">
             <div class="timeline">
                 <!-- Formation actuelle -->
-                <div class="timeline-item current">
+                <div class="timeline-item">
                     <div class="timeline-content cyberpunk-card">
-                        <div class="date-badge">2023 - Present</div>
-                        <h3>Master en Cybersécurité</h3>
-                        <p class="institution">École Supérieure d'Informatique</p>
+                        <div class="formation-badge current">En cours</div>
+                        <div class="date-badge">2021 - 2026</div>
+                        <h3>Diplôme Ingénieur Cybersécurité</h3>
+                        <div class="school-info">
+                            <i class="fas fa-university"></i>
+                            <span>EFREI Paris</span>
+                        </div>
                         <div class="details">
-                            <p>Spécialisation en sécurité offensive et défensive</p>
-                            <ul class="course-highlights">
-                                <li>Pentesting & Ethical Hacking</li>
-                                <li>Sécurité des Infrastructures Cloud</li>
-                                <li>Forensics & Analyse de Malwares</li>
+                            <p>Formation d'ingénieur spécialisé en cybersécurité, infrastructure et logiciel après une prépa intégrée scientifique</p>
+                            <ul class="formation-details">
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Spécialisation en cybersécurité et infrastructure</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Focus sur la sécurité offensive et défensive</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Projets pratiques en environnement professionnel</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -47,15 +65,60 @@
                 <!-- Formation précédente -->
                 <div class="timeline-item">
                     <div class="timeline-content cyberpunk-card">
-                        <div class="date-badge">2020 - 2023</div>
-                        <h3>Licence en Informatique</h3>
-                        <p class="institution">Université de Technologies</p>
+                        <div class="formation-badge completed">Complété</div>
+                        <div class="date-badge">Août-Décembre 2023</div>
+                        <h3>Web Programming Diploma</h3>
+                        <div class="school-info">
+                            <i class="fas fa-university"></i>
+                            <span>Concordia University, Montréal-CANADA</span>
+                        </div>
                         <div class="details">
-                            <p>Formation générale en informatique avec focus sécurité</p>
-                            <ul class="course-highlights">
-                                <li>Programmation Système</li>
-                                <li>Réseaux & Protocoles</li>
-                                <li>Base de la Cybersécurité</li>
+                            <p>At Continuing Education, this period of full-time study abroad is for 16 weeks.</p>
+                            <ul class="formation-details">
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Computer Architecture and Operating Systems</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Introduction to cybersecurity and cryptography </span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Networks and Protocols</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Advanced Web Programming and UML Designs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content cyberpunk-card">
+                        <div class="formation-badge current">Complété</div>
+                        <div class="date-badge">2019 - 2021</div>
+                        <h3>Baccalauréat Scientifique</h3>
+                        <div class="school-info">
+                            <i class="fas fa-university"></i>
+                            <span>Lycée Saint-André, NIORT (79)</span>
+                        </div>
+                        <div class="details">
+                            <p>Mention Très Bien avec une mention européenne Espagnole</p>
+                            <ul class="formation-details">
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Mathématiques</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Physiques-Chimie</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Numérique Sciences Informatiques</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -63,41 +126,54 @@
             </div>
         </div>
 
-        <!-- Certifications Section -->
+        <!-- Section Certifications (inchangée) -->
         <div class="certifications-section">
-            <h2 class="sub-title">Certifications & Formations Complémentaires</h2>
+            <h2>Certifications</h2>
             <div class="certifications-grid">
-                <div class="cert-card cyberpunk-card">
-                    <div class="cert-header">
-                        <div class="cert-icon">
-                            <span class="hack-icon">⚡</span>
-                        </div>
-                        <div class="cert-info">
-                            <h4>CompTIA Security+</h4>
-                            <span class="cert-date">2023</span>
-                        </div>
+                <!-- CompTIA Security+ -->
+                <div class="certification-card cyberpunk-card">
+                    <div class="certification-logo">
+                        <img src="assets/images/google.png" alt="Google Logo">
                     </div>
-                    <div class="cert-body">
-                        <p>Certification internationale en sécurité des systèmes d'information</p>
+                    <div class="certification-content">
+                        <div class="certification-header">
+                            <div class="certification-info">
+                                <h3>Google Cybersecurity Professional Certificate</h3>
+                                <span class="certification-date">2024</span>
+                            </div>
+                        </div>
+                        <p>Certification proposée par Google validant les compétences en sécurité des systèmes d'information</p>
+                        <div class="certification-skills">
+                            <span class="skill-badge">Assets, Threats, and Vulnerabilities</span>
+                            <span class="skill-badge">Network Security</span>
+                            <span class="skill-badge">Automate Cybersecurity Tasks</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="cert-card cyberpunk-card">
-                    <div class="cert-header">
-                        <div class="cert-icon">
-                            <span class="hack-icon">🔒</span>
-                        </div>
-                        <div class="cert-info">
-                            <h4>CISCO CCNA Security</h4>
-                            <span class="cert-date">2022</span>
-                        </div>
+        
+                <!-- CEH -->
+                <div class="certification-card cyberpunk-card">
+                    <div class="certification-logo">
+                        <img src="assets/images/ceh-logo.png" alt="CEH Logo">
                     </div>
-                    <div class="cert-body">
-                        <p>Spécialisation en sécurité des réseaux Cisco</p>
+                    <div class="certification-content">
+                        <div class="certification-header">
+                            <div class="certification-info">
+                                <h3>Microsoft Certified SC-900</h3>
+                                <span class="certification-date">En préparation</span>
+                            </div>
+                        </div>
+                        <p>Security, Compliance, and Identity Fundamentals</p>
+                        <div class="certification-skills">
+                            <span class="skill-badge">Pentesting</span>
+                            <span class="skill-badge">Sécurité Offensive</span>
+                            <span class="skill-badge">Audit Sécurité</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </main>
 
     <script src="js/main.js"></script>
